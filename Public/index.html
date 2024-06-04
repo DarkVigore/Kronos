@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kronos - Tienda Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <img src="images/logo.png" width="60" height="60" alt="Logo de Kronos">
+        </div>
+        <h1>Kronos</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="view-products">Inicio</a></li>
+                <li><a href="#" id="view-cart">Carrito (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#" id="view-register">Registro</a></li>
+                <li><a href="#" id="view-login">Iniciar Sesión</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <main>
+        <div id="products-container"></div>
+        <img src="images/A24.webp" alt="Samsung A24" width="150" height="150">
+        <h2>Samsung A24</h2>
+        <p>Precio: $623.600</p>
+        <button>Agregar al carrito</button>
+        </main>
+        
+        <section id="cart" style="display: none;">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout">Pagar</button>
+        </section>
+        <section id="register" style="display: none;">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <label for="register-username">Nombre de Usuario:</label>
+                <input type="text" id="register-username" required>
+                <label for="register-password">Contraseña:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section id="login" style="display: none;">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <label for="login-username">Nombre de Usuario:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kronos. Todos los derechos reservados.</p>
+    </footer>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
